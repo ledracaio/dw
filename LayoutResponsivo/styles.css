@@ -108,3 +108,60 @@ input[type="submit"] {
     height: 300px;
     object-fit: cover; /* Para manter a proporção da imagem e cortá-la para caber no espaço definido */
 }
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-size: auto; /* Ajuste para tamanho automático em telas menores */
+    }
+
+    header {
+        position: static; /* Remover a posição fixa no topo em telas menores */
+    }
+
+    main {
+        padding: 10px; /* Reduzir o preenchimento no conteúdo principal */
+    }
+
+    footer {
+        text-align: center;
+    }
+    form {
+        max-width: 100%; /* Alterar a largura máxima do formulário para se ajustar à tela */
+        margin: 0; /* Remover a margem lateral no formulário */
+    }
+
+    label {
+        margin-bottom: 5px; /* Reduzir a margem inferior do rótulo */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 8px; /* Reduzir o preenchimento nos elementos de entrada */
+        margin-bottom: 10px; /* Reduzir a margem inferior nos elementos de entrada */
+        font-size: 14px; /* Reduzir o tamanho da fonte nos elementos de entrada */
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px; /* Reduzir o preenchimento no botão de envio */
+        font-size: 14px; /* Reduzir o tamanho da fonte no botão de envio */
+    }
+
+    .navbar-horizontal {
+        flex-direction: column; /* Alterar para uma direção de coluna para empilhar os links na vertical */
+        align-items: center; /* Centralizar os links na vertical */
+        background-color: #333; /* Cor de fundo do menu */
+    }
+
+    .nav-link {
+        padding: 8px; /* Reduzir o espaçamento interno dos links */
+        margin-bottom: 5px; /* Adicionar espaço entre os links na vertical */
+    }
+
+    .card-img-custom {
+        width: 100%; /* Fazer a imagem da carta ocupar 100% da largura do contêiner pai */
+        height: auto; /* Garantir que a altura seja ajustada automaticamente para manter a proporção */
+    }
+}
