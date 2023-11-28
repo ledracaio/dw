@@ -1,0 +1,109 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/fundo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    border-radius: 15px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+.navbar {
+    background-color: #333;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.75); 
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Adicionando espaço entre os elementos de entrada */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar-horizontal {
+    display: flex;
+    justify-content: space-around; /* Espaço uniforme entre os itens */
+    background-color: #333; /* Cor de fundo do menu */
+}
+
+.nav-link {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remova a decoração de texto sublinhado */
+    padding: 10px; /* Espaçamento interno dos links */
+}
+
+.nav-link:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse sobre os links */
+    border-radius: 5px; /* Borda arredondada nos links ao passar o mouse */
+}
+
+.card-img-custom {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Para manter a proporção da imagem e cortá-la para caber no espaço definido */
+}
